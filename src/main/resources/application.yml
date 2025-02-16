@@ -1,0 +1,23 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+  application:
+    name: pagtos-api
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    org.springframework.amqp: DEBUG
+    br.edu.utfpr.msg.pagamentos: DEBUG
+
+custom:
+  config:
+    max-retries: 5
+    retry-interval: 1000
