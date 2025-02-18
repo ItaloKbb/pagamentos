@@ -30,12 +30,14 @@ public class PagamentoService {
                     pedidoDTO
             );
             enviarMensagemSucesso(pagtoDTO);
+            System.out.println("Retorno = Sucesso ");
         } else {
             pagtoDTO = new PagtoDTO(
                     "ERRO",
                     pedidoDTO
             );
             enviarMensagemErro(pagtoDTO);
+            System.out.println("Retorno = Error ");
         }
         System.out.println(pagtoDTO);
     }

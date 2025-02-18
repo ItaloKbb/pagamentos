@@ -1,15 +1,20 @@
 spring:
   rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+    host: jaragua.lmq.cloudamqp.com
+    port: 5671
+    username: wfiygbgc
+    password: EFTpuSfIZrWOqZOJoVBUNgNGgtLoBRxB
+    virtual-host: wfiygbgc
+    acknowledge-mode: auto
+    ssl:
+      enabled: true
+      
 
   application:
     name: pagtos-api
 
 server:
-  port: 8080
+  port: 9093
 
 logging:
   level:
